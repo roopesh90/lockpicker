@@ -9,8 +9,8 @@ picks = []
 def slot_gen(_digit):
     slot = 0
     slot += _digit
-    for x in reversed(range(_digit,slots_n)):
-        slot += (math.pow(10, x))
+    for x in reversed(range(1,slots_n)):
+        slot += slots_min * (math.pow(10, x))
     return slot
     
 #First pick

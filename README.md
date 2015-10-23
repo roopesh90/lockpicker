@@ -20,6 +20,8 @@ Hence I came up with an idea, to create a py script to generate the combi's and 
 This is a super noob script and requires a HUGE amount of Work :)
 If you are looking at this, would love your feedbacks.
 
+![This is the bad Boy](https://raw.github.com/roopesh90/lockpicker/master/unrelated/lockpicker.jpg)
+
 ---
 
 ## Improvements to come:

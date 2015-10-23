@@ -39,7 +39,9 @@ def slot_gen(L_digit, U_digit, slots_n=4):
 slots= slot_gen(slots_min, slots_max)
 # picking a random slot
 while len(slots)>0:
+    clear_screen()
     random_index = randrange(0,len(slots))
+    print("\t 4digit Combi-lock key generator\n")
     print("\nnumber of tries: %d" % len(slots_picked))
     print("\nnumber of tries left: %d" % len(slots))
     print("\n\t Try :\t%d" % slots[random_index])
@@ -47,9 +49,8 @@ while len(slots)>0:
     check = str(input("\nDid that help?[Y/n]"))
     if check.lower()=="y":
         clear_screen()
-        print("\n\n\tCONGRATS:::::>>> %d\n\n" % slots[random_index])
+        print("\n\n\tCONGRATS:::::>>> %d  works!!!\n\n" % slots[random_index])
         # print("combinations tried: ")
         # print(slots_picked)
         break
     del slots[random_index]
-    clear_screen()

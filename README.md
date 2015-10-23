@@ -1,4 +1,4 @@
-# Key Combination Generator - LockPicker
+# LockPicker - Key Combination Generator
 
 ------
 

@@ -1,12 +1,20 @@
 #!/usr/bin/python3
-import math
+import platform, os, math
 from random import randrange
+
 slots_n = 4
 slots_min = 1
 slots_max = 6
 
 slots = []
 slots_picked = []
+
+def clear_screen():
+    # platforn independent
+    if platform.system().lower() == "windows":
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def slot_to_num(slot_list):
     # print(slot_list)
@@ -38,8 +46,10 @@ while len(slots)>0:
     slots_picked.append(slots[random_index])
     check = str(input("\nDid that help?[Y/n]"))
     if check.lower()=="y":
-        print("\n\n\t\tCONGRATS:::::>>> %d" % slots[random_index])
+        clear_screen()
+        print("\n\n\tCONGRATS:::::>>> %d\n\n" % slots[random_index])
         # print("combinations tried: ")
         # print(slots_picked)
         break
     del slots[random_index]
+    clear_screen()

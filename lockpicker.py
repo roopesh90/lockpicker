@@ -32,14 +32,14 @@ slots= slot_gen(slots_min, slots_max)
 # picking a random slot
 while len(slots)>0:
     random_index = randrange(0,len(slots))
-    print("number of tries: %d" % len(slots_picked))
-    print("combinations tried: ")
-    print(slots_picked)
+    print("\nnumber of tries: %d" % len(slots_picked))
     print("\nnumber of tries left: %d" % len(slots))
-    print("\t Try :\t%d" % slots[random_index])
+    print("\n\t Try :\t%d" % slots[random_index])
     slots_picked.append(slots[random_index])
-    check = str(input("Did that help?[Y/n]"))
+    check = str(input("\nDid that help?[Y/n]"))
     if check.lower()=="y":
         print("\n\n\t\tCONGRATS:::::>>> %d" % slots[random_index])
+        # print("combinations tried: ")
+        # print(slots_picked)
         break
     del slots[random_index]
